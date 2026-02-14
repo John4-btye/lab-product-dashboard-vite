@@ -28,7 +28,7 @@ test('applies conditional styling for out-of-stock products', () => {
   expect(outOfStockProduct.closest('div')).toHaveClass('outOfStockClass')
 })
 
-test('removes product from the dashboard when "Remove" button is clicked', () => {
+test('removes product from the dashboard when "Remove Product" button is clicked', () => {
   render(<App />)
   const removeButtons = screen.queryAllByText(/Remove/i)
 

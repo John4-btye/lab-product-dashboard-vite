@@ -9,17 +9,20 @@ Your goal is to structure the React components, apply styles using **CSS Modules
 ---
 
 ## **Challenge**
+
 1. Update Existing Element of the title
 2. Create New Elements for each product
 
 ## **Bonus Challenge**
+
 3. Delete Element
 
 ---
 
 ## **Instructions**
 
-### **1️⃣ Fork and Clone the Repository**  
+### **1️⃣ Fork and Clone the Repository**
+
 1. Go to the provided **GitHub repository link**.
 2. **Fork** the repository to your GitHub account.
 3. **Clone** the forked repository to your local machine:
@@ -34,12 +37,14 @@ Your goal is to structure the React components, apply styles using **CSS Modules
    ```
 
 ### **2️⃣ Update Existing Element**
+
 - Modify the existing **header** element to display the **Product Dashboard title**.
 - Select the **DOM element** with the ID of `header`.
 - Store it in a variable called `dashboardTitle`.
 - Change the **textContent** of `dashboardTitle` to **"Product Dashboard"**.
 
 ### **3️⃣ Create New Elements for Each Product**
+
 - Loop through every product in the dataset.
 - Each product is stored in an **array**.
 - Inside the loop, create and configure the following **new elements**:
@@ -50,17 +55,20 @@ Your goal is to structure the React components, apply styles using **CSS Modules
   - **`img` element (`productImage`)** to display the product image.
 
 ### **4️⃣ Append Elements to the DOM**
+
 - Select the element with the ID `product-list` and store it in a variable called `productList`.
 - Append `productTitle`, `productPrice`, `productAvailability`, and `productImage` to `productContainer`.
 - Append `productContainer` to `productList`.
 
 ### **5️⃣ Implement Conditional Rendering**
+
 - Products that are **out of stock** should be **styled differently**.
 - Use **CSS Modules** to apply a different background color to out-of-stock items.
 
 ---
 
 ## **Bonus Challenge: Delete Element**
+
 - Implement a feature that allows users to **remove a product** from the dashboard.
 - Add a **"Remove" button** next to each product.
 - When clicked, the button should **delete the product element** from the page.
@@ -104,6 +112,37 @@ productList.remove();
 ```
 
 And it's gone!
+
+---
+
+## Project Description
+
+This project is a **Product Dashboard** built with **React** and **Material-UI (MUI)**. It allows users to view a list of products, filter them based on stock availability, and remove products from the dashboard. Out-of-stock products are highlighted with conditional styling to improve visibility. The project demonstrates state management, conditional rendering, component composition, and styling with CSS modules and MUI components.
+
+**Key Features:**
+
+- View all products in a card-based layout.
+- Filter products by **All**, **In Stock**, or **Out of Stock**.
+- Conditional styling for out-of-stock products.
+- Remove products dynamically from the dashboard.
+- Responsive layout using Material-UI components.
+
+---
+
+## Setup Instructions
+
+1. **Clone the Repository**
+
+- Open your terminal
+- Move to your desired folder
+- git clone your-repository-url
+- cd lab-product-dashboard-vite
+
+2. **Install Dependencies**
+
+- npm install
+- npm run dev
+- Open your browser with the local link that vite provides in the terminal
 
 ---
 

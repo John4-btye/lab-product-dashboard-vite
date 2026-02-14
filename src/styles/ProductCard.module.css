@@ -1,3 +1,37 @@
 /* TODO: Style the product card container */
+.card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 220px;
+}
+
+.cardClass {
+    background-color: #f5f5f5;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.inStock {
+    background-color: #e0ffe0;
+}
 
 /* TODO: Add special styling for out-of-stock products */
+.outOfStock {
+    background-color: #ffe0e0;
+}
+
+.outOfStockClass {
+    background-color: #ffe6e6;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    opacity: 0.7;
+}
+
+.soldOut {
+    font-weight: bold;
+    color: #a00;
+}

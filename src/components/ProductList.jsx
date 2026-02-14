@@ -1,14 +1,24 @@
-import React from 'react';
-import ProductCard from './ProductCard';
+import React from "react";
+import ProductCard from "./ProductCard";
+import { Typography } from "@mui/material";
 
-const ProductList = ({ products }) => {
-  // TODO: Check if the product list is empty and display a message if needed
-
+const ProductList = ({ products, handleRemove }) => {
   return (
-    <div>
-      {/* TODO: Iterate over the products array and render a ProductCard for each product */}
-    </div>
+    <>
+      {/* Conditional rendering if no products are available */}
+      {products.length === 0 ? (
+        <Typography variant="h6">
+          No products available.
+        </Typography>
+      ) : (
+        products.map((product) => (
+          <ProductCard key={product.id} product={product} onRemove={handleRemove} />
+        ))
+      )}
+    </>
   );
 };
 
 export default ProductList;
+
+
